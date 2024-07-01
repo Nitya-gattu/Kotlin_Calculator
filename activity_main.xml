@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/myTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/num1"
+        tools:ignore="MissingConstraints"
+        android:hint="num 1 "
+        app:layout_constraintTop_toBottomOf="@id/myTxt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/num2"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/num1"
+        android:hint="num 2 "/>
+
+    <Button
+        android:id="@+id/addition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/num2"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="327dp" />
+
+    <Button
+        android:id="@+id/subraction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/addition"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="236dp" />
+
+    <Button
+        android:id="@+id/mul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*"
+        app:layout_constraintTop_toBottomOf="@id/subraction"
+        tools:ignore="MissingConstraints"
+
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="/"
+        app:layout_constraintTop_toBottomOf="@id/mul"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <Button
+        android:id="@+id/mod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="%"
+        app:layout_constraintTop_toBottomOf="@id/div"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
